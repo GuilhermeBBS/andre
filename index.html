@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>André Spader</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran|Crete+Round|Quicksand&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+	<style>
+		
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="index.html" class="linkhome">
+			<span class="logo"><img src="logo.jpg">André Spader</span>
+		</a>
+
+		<span class="menubtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<div id="mySideNav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#sobre" onclick="closeNav()">SOBRE</a>
+			<a href="#servicos" onclick="closeNav()">SERVIÇOS</a>
+			<a href="#contato" onclick="closeNav()">CONTATO</a>
+			<a href="#equipe" onclick="closeNav()">EQUIPE</a>
+		</div>
+	</nav>
+	<header class="principal" id="sobre">
+        <div>
+            <h1>UM DE NOSSOS VALORES...</h1>
+            <p>
+                <span class="aspas">"</span>Sempre Prover serviços jurídicos de qualidade, a fim de auxiliar os clientes a alcançar seus objetivos de forma eficaz e inovadora, através de advogados e colaboradores qualificados, valorizados e dedicados a preservar a credibilidade construída nos mais de 50 anos de atuação da empresa.<span class="aspas">"</span>
+            </p>
+        </div>
+	</header>
+	<section class="areasdeatuacao" id="servicos" >
+        <div id="divareas">
+            <div class="divisoes">
+                <h2>ATUAMOS NAS SEGUINTES ÁREAS : </h2>
+                <ul>
+                    <li>Imobiliário</li>
+                    <li>Trabalhista</li>
+                    <li>Consumidor</li>
+                    <li>Cívil</li>
+                    <li>Previdênciario</li>
+                    <li>Criminal</li>
+                    <li>Família</li>
+                </ul>
+            </div>
+            <div class="divisoes">
+                <img src="direito.jpg">
+            </div>
+        </div>
+	</section>
+	<section class="contato" id="contato"  style="width: 100%">
+		<div id="contactContent" >
+			<header>
+				<h2>CONTATE-NOS</h2>
+				<h3>Selecione um dos botões que melhor lhe atenda: </h3>
+			</header>
+			<address>
+				<div class="btncontent">
+					
+					<a href="tel:4733696613" onmousemove="alterarTelefoneBranco()" onmouseout="alterarTelefoneColorido()">
+						<div>
+							<img src="telefone.png" style="width: 30px" id="telefone">
+							<span class="word">Ligue</span>
+							<span class="seta">&gt;</span>
+						</div>
+					</a>
+					<a href="mailto:andrespader@andrespader.adv.br" onmousemove="alterarEmailBranco()" onmouseout="alterarEmailColorido()">
+						<div>
+							<img src="email.png" style="width: 30px" id="email">
+							<span class="word">E-mail</span>
+							<span class="seta">&gt;</span>
+						</div>
+					</a>
+					<a href="_escritorios/index.html" onmousemove="mudarLocalBranco()" onmouseout="mudarLocalColorido()">
+						<div>
+							<img src="map.png" style="width: 30px" id="map">
+							<span class="word">local</span>
+							<span class="seta" id="seta">&gt;</span>
+						</div>
+					</a>
+			</div>
+			<div class="icone-whatsapp">
+				<a href="https://api.whatsapp.com/send?1=pt_BR&phone=4733696613" target="_blank"><img src="icone-whatsapp.jpg"></a>
+			</div>
+		</address>
+		</div>
+	</section>
+	<section class="equipe" id="equipe">
+		<h2>NOSSA EQUIPE</h2>
+
+		<div id="slideshow-container">
+
+			<div class="myslide fade">
+				<img src="homemdeterno.png">
+				<div style="margin: 30px 0">
+					<h3>André Spader</h3>
+					<p>OAB 000000-00</p>
+				</div>
+				<a class="curriculo" onclick="abrirModal(0)">Ver curriculo &#10095;</a>
+			</div>
+
+			<div class="myslide fade">
+				<img src="pessoa.png">
+				<div style="margin: 30px 0">
+					<h3>Cristiane da Rocha</h3>
+					<p>OAB 000000-00</p>
+				</div>
+				<a class="curriculo" onclick="abrirModal(1)">Ver curriculo &#10095;</a>
+			</div>
+
+			<div class="myslide fade">
+				<img src="homem.png">
+				<div style="margin: 30px 0">
+					<h3>Flauzino Monteiro</h3>
+					<p>OAB 000000-00</p>
+				</div>
+				<a onclick="abrirModal(2)" class="curriculo">Ver curriculo &#10095;</a>
+			</div>
+
+            <div class="myslide fade">
+                <img src="pessoa.png">
+                <div style="margin: 30px 0">
+                    <h3>Natalia Passos</h3>
+                    <p>OAB 000000-00</p>
+                </div>
+                <a class="curriculo" onclick="abrirModal(3)">Ver curriculo &#10095;</a>
+            </div>
+
+			<a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+			<a class="next" onclick="changeSlides(1)">&#10095;</a>
+		</div>
+
+		<div style="text-align: center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+
+		<div class="modal">
+			<div class="infocurriculo animate">
+				<header class="curriculo">
+					<img class="imagemperfil" src="homemdeterno.png">
+					<h1>NOME DO ADVOGADO</h1>
+					<span onclick="fecharModal(0)">&times;</span>
+				</header>
+				<div class="infopessoais">
+					<p><img src="_img/balanca.png" width="25px" alt="balança do direito">Tempo de experiência e especialidade</p>
+					<p><img src="_img/emialiconepreto.png" width="20px" alt="icone de e-mail">E-mail do advogado</p>
+				</div>
+				<div class="formacao">
+					<h4>Formação</h4>
+					<ul>
+						<li>Bacharel em direito pela Universidade da Univalli</li>
+						<li>Pós graduação 2009-2011 -  – Universidade Castelo Branco/RJ. Título: Especialista em Direito Tributário, Administrativo e Constitucional.</li>
+						<li>Pós-Graduação 2005 – Universidade Castelo Branco/RJ. Título: Especialista em Direito Ambiental.</li>
+						<li>Curso de técnica em elaboração de contratos a luz do novo Código Civil – 2004.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal">
+				<div class="infocurriculo animate">
+					<header class="curriculo">
+						<img class="imagemperfil" src="pessoa.png">
+						<h1>NOME DO ADVOGADO</h1>
+						<span onclick="fecharModal(1)">&times;</span>
+					</header>
+					<div class="infopessoais">
+						<p><img src="balanca.png" width="25px" alt="balança do direito">Tempo de experiência e especialidade</p>
+						<p><img src="emialiconepreto.png" width="20px" alt="icone de e-mail">E-mail do advogado</p>
+					</div>
+					<div class="formacao">
+						<h4>Formação</h4>
+						<ul>
+							<li>Bacharel em direito pela Universidade da Univalli</li>
+							<li>Pós graduação 2009-2011 -  – Universidade Castelo Branco/RJ. Título: Especialista em Direito Tributário, Administrativo e Constitucional.</li>
+							<li>Pós-Graduação 2005 – Universidade Castelo Branco/RJ. Título: Especialista em Direito Ambiental.</li>
+							<li>Curso de técnica em elaboração de contratos a luz do novo Código Civil – 2004.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal">
+					<div class="infocurriculo animate">
+						<header class="curriculo">
+							<img class="imagemperfil" src="homem.png">
+							<h1>NOME DO ADVOGADO</h1>
+							<span onclick="fecharModal(2)">&times;</span>
+						</header>
+						<div class="infopessoais">
+							<p><img src="balanca.png" width="25px" alt="balança do direito">Tempo de experiência e especialidade</p>
+							<p><img src="emialiconepreto.png" width="20px" alt="icone de e-mail">E-mail do advogado</p>
+						</div>
+						<div class="formacao">
+							<h4>Formação</h4>
+							<ul>
+								<li>Bacharel em direito pela Universidade da Univalli</li>
+								<li>Pós graduação 2009-2011 -  – Universidade Castelo Branco/RJ. Título: Especialista em Direito Tributário, Administrativo e Constitucional.</li>
+								<li>Pós-Graduação 2005 – Universidade Castelo Branco/RJ. Título: Especialista em Direito Ambiental.</li>
+								<li>Curso de técnica em elaboração de contratos a luz do novo Código Civil – 2004.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal">
+					<div class="infocurriculo animate">
+						<header class="curriculo">
+							<img class="imagemperfil" src="pessoa.png">
+							<h1>NOME DO ADVOGADO</h1>
+							<span onclick="fecharModal(3)">&times;</span>
+						</header>
+						<div class="infopessoais">
+							<p><img src="balanca.png" width="25px" alt="balança do direito">Tempo de experiência e especialidade</p>
+							<p><img src="emialiconepreto.png" width="20px" alt="icone de e-mail">E-mail do advogado</p>
+						</div>
+						<div class="formacao">
+							<h4>Formação</h4>
+							<ul>
+								<li>Bacharel em direito pela Universidade da Univalli</li>
+								<li>Pós graduação 2009-2011 -  – Universidade Castelo Branco/RJ. Título: Especialista em Direito Tributário, Administrativo e Constitucional.</li>
+								<li>Pós-Graduação 2005 – Universidade Castelo Branco/RJ. Título: Especialista em Direito Ambiental.</li>
+								<li>Curso de técnica em elaboração de contratos a luz do novo Código Civil – 2004.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<footer>
+		<div class="quemsomos subdivisoes">
+			<h4>QUEM SOMOS ?</h4>
+			<p>André Spader é uma associação fundada em 2010, com fim de obtermos potencial humano e a criatividade daqueles que conduzem suas carreiras com foco na área jurídica e no constante aperfeiçoamento profissional, sempre embasados em princípios de ética, honestidade, profissionalismo, entusiasmo, simplicidade, agilidade e espírito de equipe.</p>
+		</div>
+		<div class="detalhesadd subdivisoes">
+			<h4>MAIS INFORMAÇÕES</h4>
+			<p><img src="telefone.png" style="width: 30px"> <a href="tel:4733636613">47-3369-6613</a></p>
+			<p><img src="map.png" style="width: 30px"><a href="">Matriz - Rua José Guerreiro Filho 139, Porto Belo, SC, Brasil</a></p>
+		</div>
+		<div class="subdivisoes">
+			<h4>Siga</h4>
+			
+			<p><img src="icone-instagran.png" width="30px" class="iconeredesocial" alt="icone Intagran">@andre.advogadobbs</p>
+			<p><img src="icone-facebook.png" width="30px" class="iconeredesocial" alt="icone Facebook">facebook.com/André-Spader-Advogados-e-Associados</p>
+		</div>
+		<p class="copy"><span>&copy;Copyright by André Spader</span></p>
+	</footer>
+	<Script src="nav.js"></Script>
+	<script>
+
+		//Trocar a imagem da seção de contato
+		function alterarTelefoneBranco(){
+			var telefone = document.getElementById('telefone');
+			telefone.src = "telefonecolorido.png";
+		}
+		function alterarTelefoneColorido(){
+			var telefone = document.getElementById('telefone');
+			telefone.src = "telefone.png";
+		}
+		function alterarEmailBranco() {
+			let email = document.getElementById("email");
+			email.src = "emailcolorido.png";
+		}
+		function alterarEmailColorido() {
+			let email = document.getElementById("email");
+			email.src = "email.png";
+		}
+		function mudarLocalBranco() {
+			var map = document.getElementById("map");
+			map.src = "mapcolorido.png";
+		}
+		function mudarLocalColorido() {
+			let map = document.getElementById("map");
+			map.src = "map.png";
+		}
+
+		/*ABRIR E FECHAR MODAL DA EQUIPE*/
+		function abrirModal(n){
+			var modal = document.getElementsByClassName("modal");
+			modal[n].style.display = "block";
+		}
+		function fecharModal(n){
+			var modal = document.getElementsByClassName("modal");
+			modal[n].style.display = "none";
+		}
+	</script>
+	<script>
+		//slide equipe
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function changeSlides(n) {
+			showSlides( slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides( slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slide = document.getElementsByClassName("myslide");
+			var dots = document.getElementsByClassName("dot");
+			if ( n > slide.length) {slideIndex = 1}
+			if ( n < 1) {slideIndex = slide.length}
+			for(i = 0; i < slide.length; i++) {
+				slide[i].style.display = "none";
+			}
+			slide[slideIndex - 1].style.display = "block";
+		}
+	</script>
+</body>
+</html>

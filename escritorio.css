@@ -1,0 +1,24 @@
+/*CABEÇALHO DA APG DE ESCRITÓRIOS*/
+.cabecalhoescritorios {background-image: url(../_img/predios.jpg);background-position: center 40%;padding: 280px 2px}
+@media screen and (max-width:600px) {
+    .cabecalhoescritorios {padding: 300px 5px}
+    /*dimunuir fonte do h3*/
+    .cabecalhoescritorios h3{font-size: 15px}
+}
+.cabecalhoescritorios h1,.cabecalhoescritorios h3{text-align: center;margin: 15px;color: #fff;transition:  1s  }
+.cabecalhoescritorios h3 span{border:1px solid #fff;padding: 10px 25px;transition: 0.5s}
+.cabecalhoescritorios h3 span:hover{opacity:0.6;background-color: rgb(255, 255, 255,.8);color: rgb(119, 119, 119);transition: padding 0.8s;padding: 10px}
+.cabecalhoescritorios h1{text-shadow: 0 0 5px rgb(119, 119, 119)}
+.cabecalhoescritorios h3:hover{text-shadow: none}
+
+.cabecalhoescritorios:hover span{padding: 80px 50px 10px 50px}
+
+/*CIDADES*/
+.btncidade{opacity:0.8;width: 50%;float: left; padding: 10px 0px;color:#fff;background-color: #24a280;border: none;font-weight: 700;}
+.btncidade:hover{background-color: #ddd;cursor: pointer;}
+
+.afilial{padding: 50px 0;clear: both;display: none;}
+.afilial h2,.afilial p{text-align: center}
+img.fotoescritorio{border-radius: 50%;display: block;margin:auto;width: 200px;} 
+.afilial a{text-align: center;text-decoration: none;padding: 15px 20px; border: 2px solid #24a280;background-color: #24a280;color:white;width: 150px;display:block;margin: 40px auto;opacity: 0.8;}
+.afilial a:hover{background-color: #fff;color: #24a280;}

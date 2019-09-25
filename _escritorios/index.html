@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran|Crete+Round|Quicksand&display=swap" rel="stylesheet">
+    <link href="../_css/style.css" rel="stylesheet">
+    <link href="../_css/escritorio.css" rel="stylesheet">
+    <title>Escritórios</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="linkhome">
+            <span class="logo"><img src="../_img/logo.jpg">André Spader</span>
+        </a>
+        <span class="menubtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="mySideNav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html#sobre" onclick="closeNav()">SOBRE</a>
+            <a href="../index.html#servicos" onclick="closeNav()">SERVIÇOS</a>
+            <a href="../index.html#contato" onclick="closeNav()">CONTATO</a>
+            <a href="../index.html#equipe" onclick="closeNav()">EQUIPE</a>
+        </div>
+    </nav>
+    <header class="cabecalhoescritorios">
+        <div>
+            <hgroup>
+                <h1>NOSSOS ESCRITÓRIOS</h1>
+                <h3><span>Veja qual fica mais perto de você </span></h3>
+            </hgroup>
+        </div>
+    </header>
+    <section class="escritorios">
+        <div>
+            <button type="button" class="btncidade" id="defaultOpen" onclick=" mostrarAfilial('portobelo',0)">PORTO BELO</button>
+            <button type="button" class="btncidade" onclick=" mostrarAfilial('bbs',1)">BOMBINHAS</button>
+        </div>
+
+        <div class="afilial" id="portobelo">
+            <img src="../_img/escpb.jpg" class="fotoescritorio">
+            <h2>Matriz de Porto Belo</h2>
+            <p>Rua José Guerreiro Filho,139, sala 08 - Porto Belo, SC</p>
+            <a href="https://www.google.com/maps/place/Andr%C3%A9+Spader+adv+e+associados/@-27.1551251,-48.5439411,17z/data=!4m5!3m4!1s0x94d8a5dd2941c8e5:0x3089d9329dd56e17!8m2!3d-27.1537648!4d-48.5421279" target="_blank">
+                  Como chegar  
+            </a>
+        </div>
+
+        <div class="afilial" id="bbs">
+            <img src="../_img/escbbs.jpg" class="fotoescritorio">
+            <h2>Filial de Bombinhas</h2>
+            <p>Av.Falcão, 193, sala 0 - Bombinhas, SC</p>
+            <a href="https://www.google.com/maps/@-27.1452691,-48.5049029,3a,75y,318.75h,68.67t/data=!3m6!1e1!3m4!1sXsTzE5NcX_LBlwBq3Hdm_g!2e0!7i13312!8i6656" target="_blank">
+                Como chegar  
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="quemsomos subdivisoes">
+            <h4>QUEM SOMOS ?</h4>
+            <p>André Spader é uma associação fundada em 2010, com fim de obtermos potencial humano e a criatividade daqueles que conduzem suas carreiras com foco na área jurídica e no constante aperfeiçoamento profissional, sempre embasados em princípios de ética, honestidade, profissionalismo, entusiasmo, simplicidade, agilidade e espírito de equipe.</p>
+        </div>
+        <div class="detalhesadd subdivisoes">
+            <h4>MAIS INFORMAÇÕES</h4>
+            <p><img src="../_img/telefone.png" style="width: 30px"> <a href="tel:4733636613">47-3369-6613</a></p>
+            <p><img src="../_img/map.png" style="width: 30px"><a href="">Matriz - Rua José Guerreiro Filho 139, Porto Belo, SC, Brasil</a></p>
+        </div>
+        <div class="subdivisoes">
+            <h4>Siga</h4>
+            
+            <p><img src="../_img/icone-instagran.png" width="30px" class="iconeredesocial" alt="icone Intagran">@andre.advogadobbs</p>
+            <p><img src="../_img/icone-facebook.png" width="30px" class="iconeredesocial" alt="icone Facebook">facebook.com/André-Spader-Advogados-e-Associados</p>
+        </div>
+        <p class="copy"><span>&copy;Copyright by André Spader</span></p>
+        </footer>
+    <script>
+        //tabs de afilial
+        function mostrarAfilial (cidade, n) {
+            var i;
+            var afilial = document.getElementsByClassName('afilial');
+            for(i = 0; i < afilial.length; i++) {
+                afilial[i].style.display = "none";
+            }
+
+            //botões de tab
+            var btncidade = document.getElementsByClassName("btncidade");
+            for(i = 0; i < btncidade.length; i++) {
+                btncidade[i].style.backgroundColor = "#24a280";
+                btncidade[i].style.color = "#fff";
+            }
+            btncidade[n].style.backgroundColor = "#fff";
+            btncidade[n].style.color = "#24a280";
+
+            document.getElementById(cidade).style.display = "block";
+        }
+        document.getElementById('defaultOpen').click();
+        
+        
+    </script>
+    <Script src="../_js/nav.js"></Script>
+</body>
+</html>
